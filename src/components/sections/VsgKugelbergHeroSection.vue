@@ -16,6 +16,6 @@ export default defineComponent({
 
 <style scoped>
 .vsgkugelberg-hero-section {
-  @apply flex min-h-screen flex-col items-center justify-center bg-gradient-to-r from-primary-100 to-primary-200 py-32 text-white;
+  @apply to-primary-300 flex max-h-screen min-h-screen flex-col items-center justify-center bg-gradient-to-br from-primary-100 py-32 text-white;
 }
 </style>

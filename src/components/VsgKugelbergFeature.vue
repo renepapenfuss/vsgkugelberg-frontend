@@ -37,21 +37,15 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="flex flex-col">
-    <a class="flex h-32 items-center justify-center fill-primary-100" href="#">
-      <component :is="iconComponent" class="w-32 object-contain text-primary-100" />
-    </a>
-    <div class="p-5">
-      <a href="#">
-        <h3 class="mb-4 text-center text-3xl font-bold">
-          {{ title }}
-        </h3>
-      </a>
-      <p class="text-center">
-        <slot />
-      </p>
-    </div>
-  </div>
+  <a class="flex flex-col items-center justify-center gap-4 rounded bg-primary-400 p-4 text-white shadow" href="#">
+    <component :is="iconComponent" class="lg:h-30 h-16 object-contain text-secondary-100 sm:h-24" />
+    <h3 class="mb-4 text-center text-2xl font-bold">
+      {{ title }}
+    </h3>
+    <p class="text-center">
+      <slot />
+    </p>
+  </a>
 </template>
 
 <style scoped></style>

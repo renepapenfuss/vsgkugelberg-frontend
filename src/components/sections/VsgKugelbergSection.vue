@@ -19,6 +19,6 @@ export default defineComponent({
 
 <style scoped>
 .vsgkugelberg-section {
-  @apply flex flex-col py-32;
+  @apply flex flex-col py-16 md:py-24 lg:py-32;
 }
 </style>

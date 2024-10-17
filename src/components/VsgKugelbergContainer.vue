@@ -7,7 +7,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <div class="mx-auto flex flex-col items-center justify-center max-w-screen-xl px-4">
+  <div class="mx-auto flex max-w-screen-xl flex-col items-center justify-center px-4">
     <slot />
   </div>
 </template>

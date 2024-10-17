@@ -40,11 +40,15 @@ export default defineComponent({
       </p>
     </VsgKugelbergTextImage>
   </VsgKugelbergSection>
-  <VsgKugelbergSection>
+  <VsgKugelbergSection class="bg-primary-300 text-white">
     <h1 class="mb-8 text-center text-3xl font-semibold lg:text-left lg:text-5xl">
       Willkommen beim <span class="text-nowrap font-extrabold text-secondary-100">VSG Kugelberg e.V.</span>
     </h1>
-    <p class="mb-16 text-center">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+    <p class="mb-16 text-center">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+      dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita
+      kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+    </p>
     <VsgKugelbergFeatureGrid>
       <VsgKugelbergFeature icon="tabletennis" title="Tischtennis">
         Erlebe Schnelligkeit und Präzision. Finde bei uns den passenden Spielpartner und verbessere deine Technik.
