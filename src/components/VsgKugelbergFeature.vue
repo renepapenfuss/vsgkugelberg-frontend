@@ -1,5 +1,5 @@
 <script lang="ts">
-import { defineComponent } from 'vue'
+import { type Component, defineComponent } from 'vue'
 import TableTennisIcon from '@/components/icons/TableTennisIcon.vue'
 import VolleyballIcon from '@/components/icons/VolleyballIcon.vue'
 import GymnasticsIcon from '@/components/icons/GymnasticsIcon.vue'
@@ -12,7 +12,7 @@ export default defineComponent({
     icon: {
       type: String,
       required: true,
-      validator: (value) => {
+      validator: (value: string) => {
         return ['tabletennis', 'volleyball', 'badminton', 'gymnastics'].includes(value)
       }
     },
@@ -22,8 +22,8 @@ export default defineComponent({
     }
   },
   computed: {
-    iconComponent() {
-      const iconMap = {
+    iconComponent(): Component | undefined {
+      const iconMap: Record<string, Component> = {
         tabletennis: TableTennisIcon,
         volleyball: VolleyballIcon,
         gymnastics: GymnasticsIcon,
@@ -37,7 +37,7 @@ export default defineComponent({
 </script>
 
 <template>
-  <a class="flex flex-col items-center justify-center gap-4 rounded bg-primary-400 p-4 text-white shadow" href="#">
+  <a class="bg-primary-400 flex flex-col items-center justify-center gap-4 rounded p-4 text-white shadow" href="#">
     <component :is="iconComponent" class="lg:h-30 h-16 object-contain text-secondary-100 sm:h-24" />
     <h3 class="mb-4 text-center text-2xl font-bold">
       {{ title }}
