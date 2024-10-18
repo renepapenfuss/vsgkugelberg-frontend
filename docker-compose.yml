@@ -72,7 +72,7 @@ services:
     image: nginx/nginx-prometheus-exporter:latest
     container_name: nginx-exporter
     restart: unless-stopped
-    command: --nginx.scrape-uri http://vsgkugelberg-frontend/nginx_status
+    command: --nginx.scrape-uri https://vsgkugelberg-frontend/nginx_status
     ports:
       - "9113:9113"
     networks:
@@ -80,6 +80,7 @@ services:
 
 networks:
   web:
+    name: web
 
 volumes:
   nginx_certs:
