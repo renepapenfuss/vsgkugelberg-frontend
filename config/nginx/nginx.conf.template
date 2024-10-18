@@ -12,7 +12,6 @@ server {
     # Enable Nginx status metrics
     location /nginx_status {
         stub_status;
-        allow all;  # For security, replace 'all' with specific IPs or 'localhost'
-        deny all;
+        allow all;
     }
 }

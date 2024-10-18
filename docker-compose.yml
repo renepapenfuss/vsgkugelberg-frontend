@@ -1,13 +1,11 @@
-version: '3.8'
-
 services:
-  vueapp:
+  vsgkugelberg-frontnend:
     build:
       context: .
       dockerfile: Dockerfile
       args:
         DOMAIN_NAME: ${DOMAIN_NAME}
-    container_name: vueapp
+    container_name: vsgkugelberg-frontnend
     restart: unless-stopped
     networks:
       - web
@@ -74,7 +72,7 @@ services:
     image: nginx/nginx-prometheus-exporter:latest
     container_name: nginx-exporter
     restart: unless-stopped
-    command: -nginx.scrape-uri http://vueapp/nginx_status
+    command: --nginx.scrape-uri http://vsgkugelberg-frontend/nginx_status
     ports:
       - "9113:9113"
     networks:
