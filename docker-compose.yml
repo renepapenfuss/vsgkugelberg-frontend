@@ -1,11 +1,11 @@
 services:
-  vsgkugelberg-frontnend:
+  vsgkugelberg-frontend:
     build:
       context: .
       dockerfile: Dockerfile
       args:
         DOMAIN_NAME: ${DOMAIN_NAME}
-    container_name: vsgkugelberg-frontnend
+    container_name: vsgkugelberg-frontend
     restart: unless-stopped
     networks:
       - web
